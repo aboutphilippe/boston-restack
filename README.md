@@ -57,7 +57,25 @@ It demonstrates how to control Boston Dynamics Spot robot through a basic workfl
 
    This will start the Restack service with the defined workflows and functions.
 
-6. In a new terminal, schedule the workflow:
+6. On Boston Dynamics Spot, run the spot functions:
+
+```bash
+ poetry env use 3.12
+```
+
+```bash
+poetry shell
+```
+
+```bash
+poetry install
+```
+
+```bash
+poetry run spot
+```
+
+7. In a new terminal, schedule the workflow:
 
    ```bash
    poetry shell
@@ -69,7 +87,7 @@ It demonstrates how to control Boston Dynamics Spot robot through a basic workfl
 
    This will schedule the `GreetingWorkflow` and print the result.
 
-7. Optionally, schedule the workflow to run on a specific calendar or interval:
+8. Optionally, schedule the workflow to run on a specific calendar or interval:
 
    ```bash
    poetry run calendar
